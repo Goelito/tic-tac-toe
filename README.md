@@ -12,3 +12,9 @@ Before starting program :
 If you are on windows, you don't have to make any changes.
 
 if you are on linux, you have to replace "cls" by "clear" line 146
+
+__________________________________________________________________________________________________________
+
+I don't know how GitHub works, but if you want to send me optimizations for the program I have discord
+
+Goel#6360
