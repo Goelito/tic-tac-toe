@@ -180,7 +180,6 @@ def clique_c3():
 def tk_joueur():
     affichage(grille)
     global joueur
-    print(joueur)
     if joueur == 2:
         label_tour_joueur["text"] = "C'est au tour du joueur 1"
         joueur = 1
