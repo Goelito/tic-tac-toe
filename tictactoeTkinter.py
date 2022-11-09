@@ -22,58 +22,58 @@ grille = [
 #fonction pour changer de couleur au survol de la souris
 
 def a1survol_bouton(event):
-    a1['bg'] = "grey95"
+    a1['bg'] = "grey85"
     
 def a1sortie_survol_bouton(event):
-    a1['bg'] = "white"
+    a1['bg'] = "whitesmoke"
     
 def a2survol_bouton(event):
-    a2['bg'] = "grey95"
+    a2['bg'] = "grey85"
     
 def a2sortie_survol_bouton(event):
-    a2['bg'] = "white"
+    a2['bg'] = "whitesmoke"
     
 def a3survol_bouton(event):
-    a3['bg'] = "grey95"
+    a3['bg'] = "grey85"
     
 def a3sortie_survol_bouton(event):
-    a3['bg'] = "white"
+    a3['bg'] = "whitesmoke"
     
 def b1survol_bouton(event):
-    b1['bg'] = "grey95"
+    b1['bg'] = "grey85"
     
 def b1sortie_survol_bouton(event):
-    b1['bg'] = "white"
+    b1['bg'] = "whitesmoke"
     
 def b2survol_bouton(event):
-    b2['bg'] = "grey95"
+    b2['bg'] = "grey85"
     
 def b2sortie_survol_bouton(event):
-    b2['bg'] = "white"
+    b2['bg'] = "whitesmoke"
     
 def b3survol_bouton(event):
-    b3['bg'] = "grey95"
+    b3['bg'] = "grey85"
     
 def b3sortie_survol_bouton(event):
-    b3['bg'] = "white"
+    b3['bg'] = "whitesmoke"
     
 def c1survol_bouton(event):
-    c1['bg'] = "grey95"
+    c1['bg'] = "grey85"
     
 def c1sortie_survol_bouton(event):
-    c1['bg'] = "white"
+    c1['bg'] = "whitesmoke"
     
 def c2survol_bouton(event):
-    c2['bg'] = "grey95"
+    c2['bg'] = "grey85"
     
 def c2sortie_survol_bouton(event):
-    c2['bg'] = "white"
+    c2['bg'] = "whitesmoke"
     
 def c3survol_bouton(event):
-    c3['bg'] = "grey95"
+    c3['bg'] = "grey85"
     
 def c3sortie_survol_bouton(event):
-    c3['bg'] = "white"
+    c3['bg'] = "whitesmoke"
 
 #fonction pour placer des pions par case
 def clique_a1():
@@ -222,19 +222,24 @@ def finito(joueur):
 #tkinter init
 
 fenetre = Tk()
-fenetre.geometry("439x800")
+fenetre.geometry("335x550")
 fenetre.resizable(height=False, width=False)
 fenetre.title("Tic tac Toe")
-fenetre["bg"] = "whitesmoke"
+fenetre["bg"] = "grey90"
 
 #affichage joueur
 
 label_tour_joueur = Label(fenetre, text="C'est au tour du joueur 1")
+label_tour_joueur["bg"] = "grey90"
+label_tour_joueur["font"] = 25
 label_tour_joueur.pack()
 
 #affichage fin de partie
 
 label_fin_partie = Label(fenetre, text="")
+label_fin_partie["bg"] = "grey90"
+label_fin_partie["font"] = 25
+label_fin_partie.pack(side=BOTTOM)
 
 #création de la grille et des boutons
 
@@ -248,20 +253,20 @@ ligneC = Frame(grille_tk, bg="white")
 
 #taille écriture bouton
 
-f = font.Font(size=57)
+f = font.Font(family="Dejavu Sans", size=57, weight="bold")
 
 
 #création boutons
 
-a1 = Button(ligneA, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_a1)
-a2 = Button(ligneA, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_a2)
-a3 = Button(ligneA, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_a3)
-b1 = Button(ligneB, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_b1)
-b2 = Button(ligneB, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_b2)
-b3 = Button(ligneB, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_b3)
-c1 = Button(ligneC, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_c1)
-c2 = Button(ligneC, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_c2)
-c3 = Button(ligneC, text="   ",bg="white", relief=SUNKEN, activebackground="white", borderwidth=0, font=f, command=clique_c3)
+a1 = Button(ligneA, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_a1, width=2, height=1)
+a2 = Button(ligneA, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_a2, width=2, height=1)
+a3 = Button(ligneA, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_a3, width=2, height=1)
+b1 = Button(ligneB, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_b1, width=2, height=1)
+b2 = Button(ligneB, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_b2, width=2, height=1)
+b3 = Button(ligneB, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_b3, width=2, height=1)
+c1 = Button(ligneC, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_c1, width=2, height=1)
+c2 = Button(ligneC, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_c2, width=2, height=1)
+c3 = Button(ligneC, text="   ",bg="whitesmoke", relief=SUNKEN, activebackground="grey85", borderwidth=0, font=f, command=clique_c3, width=2, height=1)
 
 #affichage grille
 
